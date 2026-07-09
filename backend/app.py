@@ -6,9 +6,9 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 from backend.config import DEBUG
-from services.audio_validation import validate_audio_upload
-from services.pronunciation_service import assess_file
-from utils import get_logger, make_error_response
+from backend.services.audio_validation import validate_audio_upload
+from backend.services.pronunciation_service import assess_file
+from backend.utils import get_logger, make_error_response
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
