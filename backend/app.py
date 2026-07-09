@@ -5,7 +5,7 @@ from typing import Any, Dict
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-from config import DEBUG
+from backend.config import DEBUG
 from services.audio_validation import validate_audio_upload
 from services.pronunciation_service import assess_file
 from utils import get_logger, make_error_response
