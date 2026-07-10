@@ -6,7 +6,7 @@ import Result from './components/Result';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
 
-const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const apiBaseUrl = import.meta.env.VITE_API_URL || 'https://pronounciation-ready-1.onrender.com';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
